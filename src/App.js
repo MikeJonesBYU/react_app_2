@@ -3,23 +3,12 @@ import React, { useState } from 'react';
 import quotes from './quotes';
 import QuoteCard from './QuoteCard';
 import Sidebar from './Sidebar';
+import categoriesConfig from './categoriesConfig';
 import './styles.css';
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedSubcategory, setSelectedSubcategory] = useState(null);
-
-  const categories = [
-    {
-      name: "Motivational",
-      subcategories: ["Life", "Work", "Health"]
-    },
-    {
-      name: "Love",
-      subcategories: ["Romantic", "Platonic", "Family"]
-    }
-    // ... more categories
-  ];
 
   const handleSelectCategory = (category, subcategory = null) => {
     setSelectedCategory(category.name);
@@ -33,7 +22,7 @@ function App() {
 
   return (
     <div className="app">
-      <Sidebar categories={categories} onSelectCategory={handleSelectCategory} />
+      <Sidebar categories={categoriesConfig} onSelectCategory={handleSelectCategory} />
       <div className="quotes-container">
         {filteredQuotes.map(quote => (
           <QuoteCard key={quote.id} quote={quote} />
