@@ -1,15 +1,29 @@
 /* styles.css */
+/* styles.css */
+/* styles.css */
 
+.app {
+    display: flex;
+    flex-direction: column; /* Ensure that the main direction is vertical */
+    align-items: stretch;   /* Stretch child items to fill the width */
+  }
+  
+  /* ... the rest of your styles ... */
+  
 .navbar {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;  /* Adjusted this to stretch */
+    width: 100%;  /* Stretch across the top */
+    border-bottom: 1px solid #ccc;  /* Optional: For a separator line */
   }
   
   .category-nav, .subcategory-nav {
     display: flex;
+    justify-content: center;  /* Center the buttons */
     gap: 10px; 
     margin: 10px 0;
+    background-color: #f5f5f5;  /* Optional: For a light background */
   }
   
   button {
@@ -31,8 +45,14 @@
   
   .quotes-container {
     margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
+  /* ... rest of the styles ... */
+    
 
 .quote-card {
     border: 1px solid #e0e0e0;

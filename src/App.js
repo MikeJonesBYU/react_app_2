@@ -34,7 +34,7 @@ function App() {
         onSelectSubcategory={handleSelectSubcategory}
       />
       <div className="quotes-container">
-        {filteredQuotes.map(quote => (
+        {selectedSubcategory && filteredQuotes.map(quote => ( // Only render if a subcategory is selected
           <QuoteCard key={quote.id} quote={quote} />
         ))}
       </div>
