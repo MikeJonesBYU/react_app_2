@@ -24,3 +24,7 @@
     color: gray;
   }
   
+ 
+.sidebar li > ul {
+    padding-left: 20px;  /* Adjust this value as per your indentation preference */
+  } 
