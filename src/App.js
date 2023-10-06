@@ -11,8 +11,12 @@ function App() {
   const [selectedSubcategory, setSelectedSubcategory] = useState(null);
 
   const handleSelectCategory = (category) => {
-    setSelectedCategory(category.name);
-    setSelectedSubcategory(null); // Reset the subcategory when a new category is selected
+    if (category) {
+        setSelectedCategory(category.name);
+    } else {
+        setSelectedCategory(null);
+    }
+    setSelectedSubcategory(null); // Reset the subcategory whenever the category changes
   };
 
   const handleSelectSubcategory = (subcategory) => {

@@ -123,7 +123,79 @@ const quotes = [
     author: "Jim McKay",
     category: CATEGORIES.SPORTS,
     subcategory: SUBCATEGORIES.VICTORY
+  },
+  {
+    id: 100,
+    text: "Believe you can and you're halfway there.",
+    author: "Theodore Roosevelt",
+    category: CATEGORIES.MOTIVATIONAL,
+    subcategory: SUBCATEGORIES.LIFE
+  },
+  {
+    id: 101,
+    text: "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+    author: "Winston Churchill",
+    category: CATEGORIES.MOTIVATIONAL,
+    subcategory: SUBCATEGORIES.WORK
+  },
+  {
+    id: 102,
+    text: "It always seems impossible until it's done.",
+    author: "Nelson Mandela",
+    category: CATEGORIES.MOTIVATIONAL,
+    subcategory: SUBCATEGORIES.LIFE
+  },
+  {
+    id: 103,
+    text: "Don't watch the clock; do what it does. Keep going.",
+    author: "Sam Levenson",
+    category: CATEGORIES.MOTIVATIONAL,
+    subcategory: SUBCATEGORIES.WORK
+  },
+  {
+    id: 104,
+    text: "You are never too old to set another goal or to dream a new dream.",
+    author: "C.S. Lewis",
+    category: CATEGORIES.MOTIVATIONAL,
+    subcategory: SUBCATEGORIES.LIFE
+  },
+  {
+    id: 105,
+    text: "We are most alive when we're in love.",
+    author: "John Updike",
+    category: CATEGORIES.LOVE,
+    subcategory: SUBCATEGORIES.ROMANTIC
+  },
+  {
+    id: 106,
+    text: "The only thing we never get enough of is love; and the only thing we never give enough of is love.",
+    author: "Henry Miller",
+    category: CATEGORIES.LOVE,
+    subcategory: SUBCATEGORIES.FAMILY
+  },
+  {
+    id: 107,
+    text: "Love recognizes no barriers. It jumps hurdles, leaps fences, penetrates walls to arrive at its destination full of hope.",
+    author: "Maya Angelou",
+    category: CATEGORIES.LOVE,
+    subcategory: SUBCATEGORIES.ROMANTIC
+  },
+  {
+    id: 108,
+    text: "Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.",
+    author: "Lao Tzu",
+    category: CATEGORIES.LOVE,
+    subcategory: SUBCATEGORIES.PLATONIC
+  },
+  {
+    id: 109,
+    text: "The best and most beautiful things in this world cannot be seen or even heard, but must be felt with the heart.",
+    author: "Helen Keller",
+    category: CATEGORIES.LOVE,
+    subcategory: SUBCATEGORIES.FAMILY
   }
+  
+  
   // ... you can continue adding more quotes similarly ...
 ];
 
