@@ -1,85 +1,102 @@
 /* styles.css */
-/* styles.css */
-/* styles.css */
 
-.app {
-    display: flex;
-    flex-direction: column; /* Ensure that the main direction is vertical */
-    align-items: stretch;   /* Stretch child items to fill the width */
+body {
+    background: repeating-linear-gradient(
+      45deg,
+      yellow,
+      yellow 10px,
+      pink 10px,
+      pink 20px
+    ); /* Striped background */
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Marker Felt', sans-serif; /* Ah, the classic */
   }
   
-  /* ... the rest of your styles ... */
-  
-.navbar {
+  .app {
     display: flex;
     flex-direction: column;
-    align-items: stretch;  /* Adjusted this to stretch */
-    width: 100%;  /* Stretch across the top */
-    border-bottom: 1px solid #ccc;  /* Optional: For a separator line */
+    align-items: stretch;
+  }
+  
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    border-bottom: 5px dashed purple;
   }
   
   .category-nav, .subcategory-nav {
     display: flex;
-    justify-content: center;  /* Center the buttons */
+    justify-content: center;
     gap: 10px; 
     margin: 10px 0;
-    background-color: #f5f5f5;  /* Optional: For a light background */
+    padding: 10px 0;
+    background-image: radial-gradient(circle, red, orange, yellow, green, blue, indigo, violet); /* Rainbow gradient */
+    color: #000000; 
   }
   
   button {
-    padding: 5px 15px;
-    border: none;
-    border-radius: 5px;
-    background-color: #e0e0e0;
+    padding: 10px 20px;
+    border: 3px double #00FF00; /* Neon green borders */
+    border-radius: 25px;
+    background-color: #FF00FF; /* Bright magenta background */
+    color: #FFFF00; /* Bright yellow text */
+    font-size: 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px #00FF00; /* Neon green shadows */
+    text-shadow: 2px 2px #0000FF; /* Blue text shadow */
   }
   
   button:hover {
-    background-color: #d0d0d0;
+    background-color: #00FF00; /* Neon green on hover */
+    color: #FF00FF; /* Magenta text on hover */
+    transform: rotate(10deg); /* Let's add a quirky rotation */
   }
   
   button.active {
-    background-color: #b0b0b0;
+    background-color: #0000FF; /* Blue for active */
+    color: #00FFFF; /* Cyan text for active */
+    box-shadow: 0 0 30px #FF0000; /* Red shadow for active button */
   }
   
   .quotes-container {
     margin-top: 20px;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
   
-  /* ... rest of the styles ... */
-    
-
-.quote-card {
-    border: 1px solid #e0e0e0;
+  .quote-card {
+    max-width: 600px;
     padding: 20px;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, rgba(255,0,255,1) 0%, rgba(0,255,255,1) 100%); /* Magenta to Cyan gradient */
+    border: 5px ridge #FFFF00; /* Thick yellow ridge border */
+    border-radius: 25px;
+    box-shadow: 0 0 20px #FF0000; /* Red shadows */
+    transition: transform 0.2s ease, filter 0.3s ease;
+  }
+  
+  .quote-card:hover {
+    transform: rotateY(180deg); /* Flip the card on hover */
+    filter: hue-rotate(90deg); /* Change the hue on hover */
   }
   
   .quote-text {
-    font-size: 18px;
+    font-size: 24px;
     font-style: italic;
-  }
-  
-  .quote-footer {
-    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #00FF00; /* Neon green text */
+    text-shadow: 2px 2px #FF0000; /* Red text shadow */
   }
   
   .quote-author {
+    font-size: 20px;
     font-weight: bold;
+    text-align: right;
+    color: #0000FF; /* Blue text */
+    text-shadow: 2px 2px #FFFF00; /* Yellow text shadow */
   }
   
-  .quote-source {
-    color: gray;
-  }
-  
- 
-.sidebar li > ul {
-    padding-left: 20px;  /* Adjust this value as per your indentation preference */
-  } 
