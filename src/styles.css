@@ -1,102 +1,85 @@
 /* styles.css */
 
 body {
-    background: repeating-linear-gradient(
-      45deg,
-      yellow,
-      yellow 10px,
-      pink 10px,
-      pink 20px
-    ); /* Striped background */
-    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Marker Felt', sans-serif; /* Ah, the classic */
-  }
-  
-  .app {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-  }
-  
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    width: 100%;
-    border-bottom: 5px dashed purple;
-  }
-  
-  .category-nav, .subcategory-nav {
-    display: flex;
-    justify-content: center;
-    gap: 10px; 
-    margin: 10px 0;
-    padding: 10px 0;
-    background-image: radial-gradient(circle, red, orange, yellow, green, blue, indigo, violet); /* Rainbow gradient */
-    color: #000000; 
-  }
-  
-  button {
-    padding: 10px 20px;
-    border: 3px double #00FF00; /* Neon green borders */
-    border-radius: 25px;
-    background-color: #FF00FF; /* Bright magenta background */
-    color: #FFFF00; /* Bright yellow text */
-    font-size: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 20px #00FF00; /* Neon green shadows */
-    text-shadow: 2px 2px #0000FF; /* Blue text shadow */
-  }
-  
-  button:hover {
-    background-color: #00FF00; /* Neon green on hover */
-    color: #FF00FF; /* Magenta text on hover */
-    transform: rotate(10deg); /* Let's add a quirky rotation */
-  }
-  
-  button.active {
-    background-color: #0000FF; /* Blue for active */
-    color: #00FFFF; /* Cyan text for active */
-    box-shadow: 0 0 30px #FF0000; /* Red shadow for active button */
-  }
-  
-  .quotes-container {
-    margin-top: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .quote-card {
-    max-width: 600px;
-    padding: 20px;
-    background: linear-gradient(to bottom, rgba(255,0,255,1) 0%, rgba(0,255,255,1) 100%); /* Magenta to Cyan gradient */
-    border: 5px ridge #FFFF00; /* Thick yellow ridge border */
-    border-radius: 25px;
-    box-shadow: 0 0 20px #FF0000; /* Red shadows */
-    transition: transform 0.2s ease, filter 0.3s ease;
-  }
-  
-  .quote-card:hover {
-    transform: rotateY(180deg); /* Flip the card on hover */
-    filter: hue-rotate(90deg); /* Change the hue on hover */
-  }
-  
-  .quote-text {
-    font-size: 24px;
-    font-style: italic;
-    margin-bottom: 15px;
-    color: #00FF00; /* Neon green text */
-    text-shadow: 2px 2px #FF0000; /* Red text shadow */
-  }
-  
-  .quote-author {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: right;
-    color: #0000FF; /* Blue text */
-    text-shadow: 2px 2px #FFFF00; /* Yellow text shadow */
-  }
-  
+  background-color: #f7f9fc;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+.category-nav, .subcategory-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  transition: all 0.2s ease;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #e6e6e6;
+  color: #333333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #d4d4d4;
+}
+
+button.active {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.quotes-container {
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.quote-card {
+  max-width: 800px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.quote-card:hover {
+  transform: translateY(-5px);
+}
+
+.quote-text {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.quote-author {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
+  color: #777777;
+}
