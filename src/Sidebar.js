@@ -1,4 +1,7 @@
 // Sidebar.js
+
+// also not used. 
+
 import React from 'react';
 
 function Sidebar({ categories, onSelectCategory }) {

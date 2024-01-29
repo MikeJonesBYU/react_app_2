@@ -1,15 +1,16 @@
 // Navbar.js
+
 import React from 'react';
 
 function Navbar({ categories, selectedCategory, onSelectCategory, selectedSubcategory, onSelectSubcategory }) {
   return (
     <div className="navbar">
       <div className="category-nav">
-        {categories.map((category) => (
+        {categories.map(category => (
           <button 
             key={category.name} 
-            className={selectedCategory === category.name ? "active" : ""} 
-            onClick={() => onSelectCategory(category)}
+            className={selectedCategory === category.name ? "active" : ""}
+            onClick={() => onSelectCategory(category.name === selectedCategory ? null : category)}
           >
             {category.name}
           </button>
@@ -17,11 +18,11 @@ function Navbar({ categories, selectedCategory, onSelectCategory, selectedSubcat
       </div>
       {selectedCategory && (
         <div className="subcategory-nav">
-          {categories.find(cat => cat.name === selectedCategory).subcategories.map((subcategory) => (
+          {categories.find(cat => cat.name === selectedCategory).subcategories.map(subcategory => (
             <button 
               key={subcategory} 
               className={selectedSubcategory === subcategory ? "active" : ""}
-              onClick={() => onSelectSubcategory(subcategory)}
+              onClick={() => onSelectSubcategory(subcategory === selectedSubcategory ? null : subcategory)}
             >
               {subcategory}
             </button>

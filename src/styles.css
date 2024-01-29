@@ -2,84 +2,31 @@
 
 body {
   background-color: #f7f9fc;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Georgia', serif; /* A classic serif font for better readability */
   margin: 0;
   padding: 0;
+  color: #333; /* Dark gray for text */
 }
 
 .app {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.navbar {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  width: 100%;
-}
-
-.category-nav, .subcategory-nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin: 20px 0;
-  transition: all 0.2s ease;
-}
-
-button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 25px;
-  background-color: #e6e6e6;
-  color: #333333;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  background-color: #d4d4d4;
-}
-
-button.active {
-  background-color: #333333;
-  color: #ffffff;
-}
-
-.quotes-container {
-  margin-top: 20px;
+  max-width: 800px; /* Limit width for readability */
+  margin: 40px auto; /* Center the content */
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
 }
 
 .quote-card {
-  max-width: 800px;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
-}
-
-.quote-card:hover {
-  transform: translateY(-5px);
+  margin-bottom: 40px; /* Space between quotes */
+  color:aquamarine; 
 }
 
 .quote-text {
-  font-size: 18px;
-  font-style: italic;
-  margin-bottom: 15px;
+  font-size: 24px; /* Slightly larger text size for the quotes */
+  line-height: 1.5; /* Improved line height for readability */
+  margin-bottom: 10px; /* Space between quote and author */
 }
 
 .quote-author {
-  font-size: 16px;
-  font-weight: bold;
-  text-align: right;
-  color: #777777;
+  font-size: 18px; /* Slightly smaller text for the author */
+  font-style: italic; /* Italicize the author's name for differentiation */
+  text-align: right; /* Align author's name to the right */
 }

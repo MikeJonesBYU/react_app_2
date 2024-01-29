@@ -1,4 +1,7 @@
 // QuoteCard.js
+
+// not used. 
+
 import React from 'react';
 
 function QuoteCard({ quote }) {

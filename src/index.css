@@ -1,6 +1,12 @@
 /* styles.css */
+/* styles.css additions/changes */
+
 .app {
+  max-width: 1200px;
+  margin: 40px auto; /* Center the content */
+  padding: 20px;
   display: flex;
+  flex-direction: column;
 }
 
 .sidebar {
@@ -26,4 +32,26 @@
 .quotes-container {
   flex: 1;
   padding: 10px;
+  border: 1px solid #000; /* Add a border around the quotes container */
+}
+
+/* styles.css additions/changes */
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #a2a972; /* Give navbar a solid background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to navbar */
+}
+
+.category-nav, .subcategory-nav {
+  display: flex;
+  justify-content: space-around; /* Distribute items evenly, taking up all space */
+  padding: 10px 0;
+}
+
+button {
+  background-color: transparent; /* Remove the grey background */
+  color: #333; /* Make button text dark grey */
 }
